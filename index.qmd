@@ -1,0 +1,47 @@
+---
+title: ""
+format: 
+  html:
+    toc: true
+    toc-title: "Annexe"
+    toc-location: left
+    theme: cosmo
+    page-layout: full
+    css: styles.css
+---
+
+# Annexe 1 : Tissage
+
+## Annexe 1.1
+
+*Processus de mise en carte d'un carton peint à la main*
+
+Le Jacquard est inventé à l'origine pour faciliter la reproduction de designs complexes.
+
+![Cheney Brothers point paper for furnishing fabric, Cheney Brothers, 1913](data/CheneyBrothers_Carton.jpg)
+
+[Smithsonian National Museum of American History](https://americanhistory.si.edu/collections/object/nmah_644406)
+
+
+## Annexe 1.2
+
+*Comparaison d'un tissage sur métier à cadres et d'un tissage sur métier Jacquard*
+
+Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, des motifs répétitif géométriques et une matérialité plus affirmée de la fibre. Le Jacquard est principalement utilisé comme médium de reproduction d'images dans le respect de l'original: , grande palette de couleurs possibles, fils aussi fin que possibles pour augmenter la résolution du tissage et diminuer l'effet de grille.
+
+::: {layout-ncol=2}
+
+![Coverlet, inconnu, 19e siècle, couverture en frappé colonial tissée sur métier à cadres](data/overshot.png)
+
+![Furnishing Fabric, inconnu, 1880-1889, tissage sur métier jacquard](data/jacquard.jpg)
+
+:::
+
+
+::: {layout-ncol=2}
+
+[Textile Museum of Canada](https://collections.textilemuseum.ca/collection/6618/)
+
+[Victoria & Albert Museum](https://collections.vam.ac.uk/item/O270823/furnishing-fabric-unknown/)
+
+:::

@@ -1,0 +1,8 @@
+/* Supprime le centrage automatique du contenu */
+main.content {
+  max-width: none;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
