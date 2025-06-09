@@ -57,9 +57,9 @@ Insérer GIF
 
 # Annexe 2 : R
 
-## Annexe 2.1 : Exemples de graphiques
+## Annexe 2.1
 
-## Annexe 2.2 : Exploitation d'une image vectorielle générée en R
+## Annexe 2.2
 
 R peut générer une multitude de figures vectorielles, comme ce diagramme en pointe de tarte. Une simple commande avec 3 paramètres retourne cette figure. Celle-ci peut ensuite être exportée en .svg et retravaillée dans Illustrator. Cela dit, j'aimerais pouvoir faire le travail de distorsion directement dans R. Pour ce faire, je dois investiguer les fonctions de base pour comprendre comment sont générés chacuns des éléments individuels (cercle, segments et leur positionnement, remplissage de couleur).
 
