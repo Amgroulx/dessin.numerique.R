@@ -14,20 +14,23 @@ format:
 
 ## Annexe 1.1
 
-*Processus de mise en carte d'un carton peint à la main*
+*Processus de mise en carte*
 
-Le Jacquard est inventé à l'origine pour faciliter la reproduction de designs complexes.
+Le Jacquard a été inventé à l'origine pour faciliter la reproduction de designs complexes. Pour ce faire, les dessins étaient faits sur papier quadrillés, puis la structure associée à chaque couleur était ajoutée manuellement. Cette structure était ensuite traduite en cartes perforées. Aujourd'hui, on associe la structure à même les zones colorées d'une image matricielle et le métier Jacquard lit les pixels blancs et noirs au lieu des pleins et des vides des cartes perforées.
 
 ![Cheney Brothers point paper for furnishing fabric, Cheney Brothers, 1913](data/CheneyBrothers_Carton.jpg)
 
 [Smithsonian National Museum of American History](https://americanhistory.si.edu/collections/object/nmah_644406)
 
+<br>
+
+![Mise en carton d'une image matricielle, archives personnelles](data/bref.png)
 
 ## Annexe 1.2
 
 *Comparaison d'un tissage sur métier à cadres et d'un tissage sur métier Jacquard*
 
-Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, des motifs répétitif géométriques et une matérialité plus affirmée de la fibre. Le Jacquard est principalement utilisé comme médium de reproduction d'images dans le respect de l'original: , grande palette de couleurs possibles, fils aussi fin que possibles pour augmenter la résolution du tissage et diminuer l'effet de grille.
+Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, des motifs répétitif géométriques et une matérialité plus affirmée de la fibre. Le Jacquard est principalement utilisé comme médium de reproduction d'images dans le respect de l'original: grande palette de couleurs, fils aussi fin que possibles pour augmenter la résolution du tissage et diminuer l'effet de grille.
 
 ::: {layout-ncol=2}
 
@@ -44,4 +47,25 @@ Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, 
 
 [Victoria & Albert Museum](https://collections.vam.ac.uk/item/O270823/furnishing-fabric-unknown/)
 
+:::
+
+## Annexe 1.3
+
+Insérer GIF
+
+<br>
+
+# Annexe 2 : R
+
+## Annexe 2.1 : Exemples de graphiques
+
+## Annexe 2.2 : Exploitation d'une image vectorielle générée en R
+
+R peut générer une multitude de figures vectorielles, comme ce diagramme en pointe de tarte. Une simple commande avec 3 paramètres retourne cette figure. Celle-ci peut ensuite être exportée en .svg et retravaillée dans Illustrator. Cela dit, j'aimerais pouvoir faire le travail de distorsion directement dans R. Pour ce faire, je dois investiguer les fonctions de base pour comprendre comment sont générés chacuns des éléments individuels (cercle, segments et leur positionnement, remplissage de couleur).
+
+::: {layout-ncol=2}
+
+![Diagramme en pointes de tarte généré ainsi: pie(c(0.25, 0.25, 0.5))](data/Rplot_ok.png)
+
+![Exportation de la figure en .svg et décomposition dans Illustrator](data/Rplot.png)
 :::
