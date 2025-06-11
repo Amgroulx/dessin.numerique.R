@@ -68,10 +68,12 @@ R peut générer une multitude de figures vectorielles, comme ce diagramme en po
 
 Voici un exemple rapide de création de dégradé et d'attribution au hasard des couleurs dans une matrice. À chaque fois que la page est actualisée, la sélection de couleurs change.
 
-### Choix de 3 couleurs au hasard:
+### Choix de 3 couleurs:
 
 ```{r, fig.width=6, fig.height=2}
-palette<-sample(colors(), size = 3)
+#palette<-sample(colors(), size = 3) Pour générer des couleurs au hasard à chaque 'build'
+
+palette<-c('#afd15a','#e88858', '#fa2f65')
 
 par(mar = c(0, 0, 0, 0))
 

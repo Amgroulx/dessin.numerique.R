@@ -92,7 +92,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#annexe-2.2" id="toc-annexe-2.2" class="nav-link" data-scroll-target="#annexe-2.2">Annexe 2.2</a></li>
   <li><a href="#annexe-2.3" id="toc-annexe-2.3" class="nav-link" data-scroll-target="#annexe-2.3">Annexe 2.3</a>
   <ul class="collapse">
-  <li><a href="#choix-de-3-couleurs-au-hasard" id="toc-choix-de-3-couleurs-au-hasard" class="nav-link" data-scroll-target="#choix-de-3-couleurs-au-hasard">Choix de 3 couleurs au hasard:</a></li>
+  <li><a href="#choix-de-3-couleurs" id="toc-choix-de-3-couleurs" class="nav-link" data-scroll-target="#choix-de-3-couleurs">Choix de 3 couleurs:</a></li>
   <li><a href="#création-automatiques-dun-dégradé-de-10-000-couleurs" id="toc-création-automatiques-dun-dégradé-de-10-000-couleurs" class="nav-link" data-scroll-target="#création-automatiques-dun-dégradé-de-10-000-couleurs">Création automatiques d’un dégradé de 10 000 couleurs:</a></li>
   <li><a href="#distribution-aléatoire-des-10-000-couleurs-dans-une-matrice-de-100-x-100" id="toc-distribution-aléatoire-des-10-000-couleurs-dans-une-matrice-de-100-x-100" class="nav-link" data-scroll-target="#distribution-aléatoire-des-10-000-couleurs-dans-une-matrice-de-100-x-100">Distribution aléatoire des 10 000 couleurs dans une matrice de 100 x 100</a></li>
   </ul></li>
@@ -210,22 +210,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="annexe-2.3" class="level2">
 <h2 class="anchored" data-anchor-id="annexe-2.3">Annexe 2.3</h2>
 <p>Voici un exemple rapide de création de dégradé et d’attribution au hasard des couleurs dans une matrice. À chaque fois que la page est actualisée, la sélection de couleurs change.</p>
-<section id="choix-de-3-couleurs-au-hasard" class="level3">
-<h3 class="anchored" data-anchor-id="choix-de-3-couleurs-au-hasard">Choix de 3 couleurs au hasard:</h3>
+<section id="choix-de-3-couleurs" class="level3">
+<h3 class="anchored" data-anchor-id="choix-de-3-couleurs">Choix de 3 couleurs:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>palette<span class="ot">&lt;-</span><span class="fu">sample</span>(<span class="fu">colors</span>(), <span class="at">size =</span> <span class="dv">3</span>)</span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#palette&lt;-sample(colors(), size = 3) Pour générer des couleurs au hasard à chaque 'build'</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>palette<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">'#afd15a'</span>,<span class="st">'#e88858'</span>, <span class="st">'#fa2f65'</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span>(                              </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="at">length.out =</span> <span class="dv">4</span>),   </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">z =</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">1</span>),                                   </span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> palette,</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">axes =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">""</span>, </span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">""</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span>(                              </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="at">length.out =</span> <span class="dv">4</span>),   </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">z =</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">1</span>),                                   </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> palette,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">axes =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">""</span>, </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">""</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
