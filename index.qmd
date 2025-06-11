@@ -9,7 +9,6 @@ format:
     page-layout: full
     css: styles.css
 ---
-
 # Annexe 1 : Tissage
 
 ## Annexe 1.1
@@ -20,7 +19,7 @@ Le Jacquard a été inventé à l'origine pour faciliter la reproduction de desi
 
 ![Cheney Brothers point paper for furnishing fabric, Cheney Brothers, 1913](data/CheneyBrothers_Carton.jpg)
 
-[Smithsonian National Museum of American History](https://americanhistory.si.edu/collections/object/nmah_644406)
+[Smithsonian National Museum of American History](https://americanhistory.si.edu/collections/object/nmah_644406){target="_blank"}
 
 <br>
 
@@ -33,20 +32,15 @@ Le Jacquard a été inventé à l'origine pour faciliter la reproduction de desi
 Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, des motifs répétitif géométriques et une matérialité plus affirmée de la fibre. Le Jacquard est principalement utilisé comme médium de reproduction d'images dans le respect de l'original: grande palette de couleurs et fils aussi fin que possibles pour augmenter la résolution du tissage et diminuer l'effet de grille.
 
 ::: {layout-ncol=2}
-
 ![Coverlet, inconnu, 19e siècle, couverture en frappé colonial tissée sur métier à cadres](data/overshot.png)
 
 ![Furnishing Fabric, inconnu, 1880-1889, tissage sur métier jacquard](data/jacquard.jpg)
-
 :::
 
-
 ::: {layout-ncol=2}
+[Textile Museum of Canada](https://collections.textilemuseum.ca/collection/6618/){target="_blank"}
 
-[Textile Museum of Canada](https://collections.textilemuseum.ca/collection/6618/)
-
-[Victoria & Albert Museum](https://collections.vam.ac.uk/item/O270823/furnishing-fabric-unknown/)
-
+[Victoria & Albert Museum](https://collections.vam.ac.uk/item/O270823/furnishing-fabric-unknown/){target="_blank"}
 :::
 
 ## Annexe 1.3
@@ -61,7 +55,7 @@ Insérer GIF
 
 ## Annexe 2.2
 
-R peut générer une multitude de figures vectorielles, comme ce diagramme en pointe de tarte. Une simple commande avec 3 paramètres retourne cette figure. Celle-ci peut ensuite être exportée en .svg et retravaillée dans Illustrator. Cela dit, j'aimerais pouvoir faire le travail de distorsion directement dans R. Pour ce faire, je dois investiguer les fonctions de base pour comprendre comment sont générés chacuns des éléments individuels (cercle, segments et leur positionnement, remplissage de couleur).
+R peut générer une multitude de figures vectorielles, comme ce diagramme en pointe de tarte qu'on obtient à l'aide d'une simple commande. Celle-ci peut ensuite être exportée en .svg et retravaillée dans Illustrator. Cela dit, j'aimerais pouvoir contourner les graphiques classiques pour créer des figures aléatoires. Pour ce faire, je dois investiguer les fonctions de base pour comprendre comment sont générés chacuns des éléments individuels (cercle, segments et leur positionnement, remplissage de couleur) et ensuite découvrir comment altérer ces formes.
 
 ::: {layout-ncol=2}
 
@@ -69,3 +63,65 @@ R peut générer une multitude de figures vectorielles, comme ce diagramme en po
 
 ![Exportation de la figure en .svg et décomposition dans Illustrator](data/Rplot.png)
 :::
+
+## Annexe 2.3
+
+Voici un exemple rapide de création de dégradé et d'attribution au hasard des couleurs dans une matrice. À chaque fois que la page esta ctualisée, la sélection de couleurs change.
+
+### Choix de 3 couleurs au hasard:
+
+```{r}
+palette<-sample(colors(), size = 3)
+
+par(mar = c(0, 0, 0, 0))
+
+image(                              
+  x = seq(0, 1, length.out = 4),   
+  y = c(0, 1), 
+  z = matrix(1:3, ncol = 1),                                   
+  col = palette,
+  axes = FALSE,
+  xlab = "", 
+  ylab = ""
+)
+
+```
+
+### Création automatiques d'un dégradé de 100 couleurs:
+
+```{r}
+library(RColorBrewer)
+coul <- colorRampPalette(palette)(100)
+
+par(mar = c(0, 0, 0, 0))
+
+image(                              
+  x = seq(0, 1, length.out = 101),   
+  y = c(0, 1), 
+  z = matrix(1:100, ncol = 1),                                  
+  col = coul,
+  axes = FALSE,
+  xlab = "", 
+  ylab = ""
+)
+
+```
+
+### Distribution aléatoire dans une matrice
+```{r}
+coul <- colorRampPalette(palette)(10000)
+
+par(mar = c(0, 0, 0, 0))
+
+image(                              
+  x = seq(0, 1, length.out = 101),   
+  y = seq(0, 1, length.out = 101), 
+  z = matrix(sample(1:10000), ncol = 100),                                  
+  col = coul,
+  asp = 1,
+  axes = FALSE,
+  xlab = "", 
+  ylab = ""
+)
+```
+
