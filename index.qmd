@@ -5,6 +5,7 @@ format:
     toc: true
     toc-title: "Annexe"
     toc-location: left
+    toc-depth: 2
     theme: cosmo
     page-layout: full
     css: styles.css
@@ -66,14 +67,14 @@ R peut générer une multitude de figures vectorielles, comme ce diagramme en po
 
 ## Annexe 2.3
 
-Voici un exemple rapide de création de dégradé et d'attribution au hasard des couleurs dans une matrice. À chaque fois que la page est actualisée, la sélection de couleurs change.
+Voici un exemple de création de dégradé et d'attribution au hasard des couleurs dans une matrice. Des explorations approfondies permettront de créer des algorithmes de remplissage de la matrice plus intéressants.
 
-### Choix de 3 couleurs:
+### Choix de 3 couleurs au hasard:
 
 ```{r, fig.width=6, fig.height=2}
-#palette<-sample(colors(), size = 3) Pour générer des couleurs au hasard à chaque 'build'
+set.seed(6243518)
+palette<-sample(colors(), size = 3)
 
-palette<-c('#afd15a','#e88858', '#fa2f65')
 
 par(mar = c(0, 0, 0, 0))
 
