@@ -30,7 +30,7 @@ Le Jacquard a été inventé à l'origine pour faciliter la reproduction de desi
 
 *Comparaison d'un tissage sur métier à cadres et d'un tissage sur métier Jacquard*
 
-Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, des motifs répétitif géométriques et une matérialité plus affirmée de la fibre. Le Jacquard est principalement utilisé comme médium de reproduction d'images dans le respect de l'original: grande palette de couleurs, fils aussi fin que possibles pour augmenter la résolution du tissage et diminuer l'effet de grille.
+Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, des motifs répétitif géométriques et une matérialité plus affirmée de la fibre. Le Jacquard est principalement utilisé comme médium de reproduction d'images dans le respect de l'original: grande palette de couleurs et fils aussi fin que possibles pour augmenter la résolution du tissage et diminuer l'effet de grille.
 
 ::: {layout-ncol=2}
 
