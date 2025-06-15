@@ -1,0 +1,130 @@
+---
+title: ""
+format: 
+  html:
+    toc: true
+    toc-title: "Annexe"
+    toc-location: left
+    toc-depth: 2
+    theme: cosmo
+    page-layout: full
+    css: styles.css
+---
+# Annexe 1 : Tissage
+
+## Annexe 1.1
+
+*Processus de mise en carte*
+
+Le Jacquard a été inventé à l'origine pour faciliter la reproduction de designs complexes. Pour ce faire, les dessins étaient faits sur papier quadrillés, puis la structure associée à chaque couleur était ajoutée manuellement. Cette structure était ensuite traduite en cartes perforées. Aujourd'hui, on associe la structure à même les zones colorées d'une image matricielle et le métier Jacquard lit les pixels blancs et noirs au lieu des pleins et des vides des cartes perforées.
+
+![Mise en carte pour un tissu de recouvrement, Cheney Brothers, 1913](data/CheneyBrothers_Carton.jpg)
+
+[Smithsonian National Museum of American History](https://americanhistory.si.edu/collections/object/nmah_644406){target="_blank"}
+
+<br>
+
+![Mise en carte d'une image matricielle, archives personnelles](data/bref.png)
+
+## Annexe 1.2
+
+*Comparaison d'un tissage sur métier à cadres et d'un tissage sur métier Jacquard*
+
+Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, des motifs répétitif géométriques et une matérialité plus affirmée de la fibre. Le Jacquard est principalement utilisé comme médium de reproduction d'images dans le respect de l'original: grande palette de couleurs et fils aussi fin que possibles pour augmenter la résolution du tissage et diminuer l'effet de grille.
+
+::: {layout-ncol=2}
+![Couverture, inconnu, 19e siècle, couverture en frappé colonial tissée sur métier à cadres](data/overshot.png)
+
+![Tissu de recouvrement, inconnu, 1880-1889, tissage sur métier jacquard](data/jacquard.jpg)
+:::
+
+::: {layout-ncol=2}
+[Textile Museum of Canada](https://collections.textilemuseum.ca/collection/6618/){target="_blank"}
+
+[Victoria & Albert Museum](https://collections.vam.ac.uk/item/O270823/furnishing-fabric-unknown/){target="_blank"}
+:::
+
+## Annexe 1.3
+
+Voici 2 vidéos qui présentent des méthodes de génération algorithmique de fichiers prêts à tisser. Cette approche vise à utiliser seulement les fonctions automatiques et aléatoires de Photoshop sans avoir d'image de départ.
+
+{{< video data/bref_algo1.mov>}}
+
+
+{{< video data/bref_algo2.mov>}}
+
+# Annexe 2 : R
+
+## Annexe 2.1
+
+## Annexe 2.2
+
+R peut générer une multitude de figures vectorielles, comme ce diagramme en pointe de tarte qu'on obtient à l'aide d'une simple commande. Celle-ci peut ensuite être exportée en .svg et retravaillée dans Illustrator. Cela dit, j'aimerais pouvoir contourner les graphiques classiques pour créer des figures aléatoires. Pour ce faire, je dois investiguer les fonctions de base pour comprendre comment sont générés chacuns des éléments individuels (cercle, segments et leur positionnement, remplissage de couleur) et ensuite découvrir comment altérer ces formes.
+
+::: {layout-ncol=2}
+
+![Diagramme en pointes de tarte généré ainsi: pie(c(0.25, 0.25, 0.5))](data/Rplot_ok.png)
+
+![Exportation de la figure en .svg et décomposition dans Illustrator](data/Rplot.png)
+:::
+
+## Annexe 2.3
+
+Voici un exemple de création de dégradé et d'attribution au hasard des couleurs dans une matrice. Des explorations approfondies permettraient de créer des algorithmes de remplissage de la matrice plus intéressants.
+
+*Choix de 3 couleurs au hasard*
+
+```{r, fig.width=6, fig.height=2}
+set.seed(6243518)
+palette<-sample(colors(), size = 3)
+
+
+par(mar = c(0, 0, 0, 0))
+
+image(                              
+  x = seq(0, 1, length.out = 4),   
+  y = c(0, 1), 
+  z = matrix(1:3, ncol = 1),                                   
+  col = palette,
+  axes = FALSE,
+  xlab = "", 
+  ylab = ""
+)
+
+```
+
+*Création automatiques d'un dégradé de 10 000 couleurs*
+
+```{r, fig.width=6, fig.height=2}
+library(RColorBrewer)
+coul <- colorRampPalette(palette)(10000)
+
+par(mar = c(0, 0, 0, 0))
+
+image(                              
+  x = seq(0, 1, length.out = 10001),   
+  y = c(0, 1), 
+  z = matrix(1:10000, ncol = 1),                                  
+  col = coul,
+  axes = FALSE,
+  xlab = "", 
+  ylab = ""
+)
+
+```
+
+*Distribution aléatoire des 10 000 couleurs dans une matrice de 100 x 100*
+```{r, fig.width=6, fig.height=6}
+par(mar = c(0, 0, 0, 0))
+
+image(                              
+  x = seq(0, 1, length.out = 101),   
+  y = seq(0, 1, length.out = 101), 
+  z = matrix(sample(1:10000), ncol = 100),                                  
+  col = coul,
+  axes = FALSE,
+  xlab = "", 
+  ylab = ""
+)
+```
+
