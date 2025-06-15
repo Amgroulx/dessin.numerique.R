@@ -48,10 +48,10 @@ Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, 
 
 Voici 2 vidéos qui présentent des méthodes de génération algorithmique de fichiers prêts à tisser. Cette approche vise à utiliser seulement les fonctions automatiques et aléatoires de Photoshop sans avoir d'image de départ.
 
-{{< video data/bref_algo1.mov>}}
+{{< video data/bref_algo1.mp4>}}
 
 
-{{< video data/bref_algo2.mov>}}
+{{< video data/bref_algo2.mp4>}}
 
 # Annexe 2 : R
 
