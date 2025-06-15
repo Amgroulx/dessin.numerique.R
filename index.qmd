@@ -56,13 +56,6 @@ Voici 2 vidéos qui présentent des méthodes de génération algorithmique de f
 
 ## Annexe 2.1
 
-Exemples de graphiques classiques pouvant être générés avec R:
-
-
-
-
-## Annexe 2.2
-
 R peut générer une multitude de figures vectorielles, comme ce diagramme en pointe de tarte qu'on obtient à l'aide d'une simple commande. Celle-ci peut ensuite être exportée en .svg et retravaillée dans Illustrator. Cela dit, j'aimerais pouvoir contourner les graphiques classiques pour créer des figures aléatoires. Pour ce faire, je dois investiguer les fonctions de base pour comprendre comment sont générés chacuns des éléments individuels (cercle, segments et leur positionnement, remplissage de couleur) et ensuite découvrir comment altérer ces formes.
 
 ::: {layout-ncol=2}
@@ -72,7 +65,7 @@ R peut générer une multitude de figures vectorielles, comme ce diagramme en po
 ![Exportation de la figure en .svg et décomposition dans Illustrator](data/Rplot.png)
 :::
 
-## Annexe 2.3
+## Annexe 2.2
 
 Voici un exemple de création de dégradé et d'attribution au hasard des couleurs dans une matrice. Des explorations approfondies permettraient de créer des algorithmes de remplissage de la matrice plus intéressants.
 
@@ -132,7 +125,7 @@ image(
 )
 ```
 
-## Annexe 2.4
+## Annexe 2.3
 
 Dans le premier graphique, les courbes sont générées en fonction de la fréquence à laquelle on retrouve les valeurs dans le jeu de données. Dans le deuxième graphique, les courbes sont générées en fonction de coordonnées cartésiennes. Dans les deux cas, les courbes générées suivent l'axe des x. J'aimerais pouvoir contourner cette contrainte pour générer des formes aléatoires. 
 
