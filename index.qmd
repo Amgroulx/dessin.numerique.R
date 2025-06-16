@@ -16,7 +16,7 @@ format:
 
 *Processus de mise en carte*
 
-Le Jacquard a été inventé à l'origine pour faciliter la reproduction de designs complexes. Pour ce faire, les dessins étaient faits sur papier quadrillés, puis la structure associée à chaque couleur était ajoutée manuellement. Cette structure était ensuite traduite en cartes perforées. Aujourd'hui, on associe la structure à même les zones colorées d'une image matricielle et le métier Jacquard lit les pixels blancs et noirs au lieu des pleins et des vides des cartes perforées.
+Le Jacquard a été inventé pour faciliter la reproduction de designs complexes. Pour ce faire, les dessins étaient faits sur papier quadrillés, puis la structure associée à chaque couleur était ajoutée manuellement. Cette structure était ensuite transposée sur des cartes perforées. Aujourd'hui, on associe la structure à même les zones colorées d'une image matricielle et le métier Jacquard lit les pixels blancs et noirs au lieu des pleins et des vides des cartes perforées.
 
 ![Mise en carte pour un tissu de recouvrement, Cheney Brothers, 1913](data/CheneyBrothers_Carton.jpg)
 
