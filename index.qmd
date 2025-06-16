@@ -127,9 +127,9 @@ image(
 
 ## Annexe 2.3
 
-Dans le premier graphique, les courbes sont générées en fonction de la fréquence à laquelle on retrouve les valeurs dans le jeu de données. Dans le deuxième graphique, les courbes sont générées en fonction de coordonnées cartésiennes. Dans les deux cas, les courbes générées suivent l'axe des x. J'aimerais pouvoir contourner cette contrainte pour générer des formes aléatoires. 
+Dans le premier graphique, les courbes sont générées en fonction de la fréquence à laquelle on retrouve les valeurs dans le jeu de données. Dans le deuxième graphique, les courbes sont générées en fonction de coordonnées cartésiennes. Dans les deux cas, les courbes générées suivent l'axe des x. J'aimerais pouvoir contourner cette contrainte pour générer des formes basées sur des données numériques aléatoires. 
 
-```{r, fig.align='center'}
+```{r, fig.width = 12, fig.align='center'}
 library(ggplot2)
 
 iris<-iris
@@ -137,14 +137,15 @@ par(mar=c(0,0,0,0))
 
 hist<-ggplot(aes(x=Sepal.Length, fill = Species), data=iris) +
   geom_histogram(aes(y=after_stat(density)), binwidth = 0.1) + 
-  geom_density(alpha=0.5)
+  geom_density(alpha=0.5)+
+  facet_wrap(~Species)
 
 hist
 
-
 data_curve<-ggplot(aes(x=Sepal.Length, y= Sepal.Width, fill = Species, col = Species), data=iris) +
   geom_point(alpha =0.6) +
-  geom_smooth(method = 'loess', formula = 'y~x', se =FALSE)
+  geom_smooth(method = 'loess', formula = 'y~x', se =FALSE)+
+  facet_wrap(~Species)
 
 data_curve
 

@@ -93,7 +93,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#annexe-2.1" id="toc-annexe-2.1" class="nav-link" data-scroll-target="#annexe-2.1">Annexe 2.1</a></li>
   <li><a href="#annexe-2.2" id="toc-annexe-2.2" class="nav-link" data-scroll-target="#annexe-2.2">Annexe 2.2</a></li>
   <li><a href="#annexe-2.3" id="toc-annexe-2.3" class="nav-link" data-scroll-target="#annexe-2.3">Annexe 2.3</a></li>
-  <li><a href="#annexe-2.4" id="toc-annexe-2.4" class="nav-link" data-scroll-target="#annexe-2.4">Annexe 2.4</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -178,10 +177,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Annexe 2 : R</h1>
 <section id="annexe-2.1" class="level2">
 <h2 class="anchored" data-anchor-id="annexe-2.1">Annexe 2.1</h2>
-<p>Exemples de graphiques classiques pouvant être générés avec R:</p>
-</section>
-<section id="annexe-2.2" class="level2">
-<h2 class="anchored" data-anchor-id="annexe-2.2">Annexe 2.2</h2>
 <p>R peut générer une multitude de figures vectorielles, comme ce diagramme en pointe de tarte qu’on obtient à l’aide d’une simple commande. Celle-ci peut ensuite être exportée en .svg et retravaillée dans Illustrator. Cela dit, j’aimerais pouvoir contourner les graphiques classiques pour créer des figures aléatoires. Pour ce faire, je dois investiguer les fonctions de base pour comprendre comment sont générés chacuns des éléments individuels (cercle, segments et leur positionnement, remplissage de couleur) et ensuite découvrir comment altérer ces formes.</p>
 <div>
 
@@ -207,8 +202,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="annexe-2.3" class="level2">
-<h2 class="anchored" data-anchor-id="annexe-2.3">Annexe 2.3</h2>
+<section id="annexe-2.2" class="level2">
+<h2 class="anchored" data-anchor-id="annexe-2.2">Annexe 2.2</h2>
 <p>Voici un exemple de création de dégradé et d’attribution au hasard des couleurs dans une matrice. Des explorations approfondies permettraient de créer des algorithmes de remplissage de la matrice plus intéressants.</p>
 <p><em>Choix de 3 couleurs au hasard</em></p>
 <div class="cell" data-layout-align="center">
@@ -281,35 +276,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="annexe-2.4" class="level2">
-<h2 class="anchored" data-anchor-id="annexe-2.4">Annexe 2.4</h2>
-<p>Dans le premier graphique, les courbes sont générées en fonction de la fréquence à laquelle on retrouve les valeurs dans le jeu de données. Dans le deuxième graphique, les courbes sont générées en fonction de coordonnées cartésiennes. Dans les deux cas, les courbes générées suivent l’axe des x. J’aimerais pouvoir contourner cette contrainte pour générer des formes aléatoires.</p>
+<section id="annexe-2.3" class="level2">
+<h2 class="anchored" data-anchor-id="annexe-2.3">Annexe 2.3</h2>
+<p>Dans le premier graphique, les courbes sont générées en fonction de la fréquence à laquelle on retrouve les valeurs dans le jeu de données. Dans le deuxième graphique, les courbes sont générées en fonction de coordonnées cartésiennes. Dans les deux cas, les courbes générées suivent l’axe des x. J’aimerais pouvoir contourner cette contrainte pour générer des formes basées sur des données numériques aléatoires.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>iris<span class="ot">&lt;-</span>iris</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>))</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>hist<span class="ot">&lt;-</span><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Sepal.Length, <span class="at">fill =</span> Species), <span class="at">data=</span>iris) <span class="sc">+</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y=</span><span class="fu">after_stat</span>(density)), <span class="at">binwidth =</span> <span class="fl">0.1</span>) <span class="sc">+</span> </span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">alpha=</span><span class="fl">0.5</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>hist</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>iris<span class="ot">&lt;-</span>iris</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>))</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>hist<span class="ot">&lt;-</span><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Sepal.Length, <span class="at">fill =</span> Species), <span class="at">data=</span>iris) <span class="sc">+</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y=</span><span class="fu">after_stat</span>(density)), <span class="at">binwidth =</span> <span class="fl">0.1</span>) <span class="sc">+</span> </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">alpha=</span><span class="fl">0.5</span>)<span class="sc">+</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>Species)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>hist</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1152"></p>
 </figure>
 </div>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data_curve<span class="ot">&lt;-</span><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Sepal.Length, <span class="at">y=</span> Sepal.Width, <span class="at">fill =</span> Species, <span class="at">col =</span> Species), <span class="at">data=</span>iris) <span class="sc">+</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span><span class="fl">0.6</span>) <span class="sc">+</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">'loess'</span>, <span class="at">formula =</span> <span class="st">'y~x'</span>, <span class="at">se =</span><span class="cn">FALSE</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>data_curve</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">'loess'</span>, <span class="at">formula =</span> <span class="st">'y~x'</span>, <span class="at">se =</span><span class="cn">FALSE</span>)<span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>Species)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>data_curve</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1152"></p>
 </figure>
 </div>
 </div>
