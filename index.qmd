@@ -52,10 +52,17 @@ Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, 
 
 ## Annexe 1.3
 
-Voici 2 vidéos qui présentent des méthodes de génération algorithmique de fichiers prêts à tisser que j'ai mises au point. Ces approches visent à exploiter le langage formel du pixel pour créer des tissages en utilisant seulement les fonctions automatiques et aléatoires de Photoshop sans avoir d'image de départ.
+Voici deux vidéos qui présentent des méthodes de génération algorithmique de fichiers prêts à tisser que j'ai mises au point. Ces approches visent à exploiter le langage formel du pixel pour créer des tissages en utilisant seulement les fonctions automatiques et aléatoires de Photoshop sans avoir d'image de départ.
+
+
+### Tissage en armures doubles basé sur un dégradé en diffusion
+
+Il s'agit de la méthode qui a été utilisée pour réaliser la pièce WWW qu'on trouve dans le matériel d'appui.
 
 {{< video data/bref_algo1.mp4>}}
 
+
+### Tissage sergé basé sur un moiré
 {{< video data/bref_algo2.mp4>}}
 
 # Annexe 2 : R
