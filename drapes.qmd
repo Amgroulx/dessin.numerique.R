@@ -13,16 +13,18 @@ format:
 
 :::{.navbar}
 [Annexe](index.html) |
-[Matériel d'appui 01: Outil génératif de drapés ](drapes.html) |
+[Matériel d'appui 01: TheDecorator ](drapes.html) |
 [Matériel d'appui 02: Générateurs d'effets de surface](motifs.html)
 :::
 
-# Générateur de composition aléatoire
+# TheDecorator
 
-Le décorateur, application Processing, 2020.
+TheDecorator est un outil générateur de drapés aléatoires servant de point de départ pour faire des sculptures textiles et des images numériques.
 
 
 ## Application Processing
+
+Un nombre fini d'éléments de décoration ont été créés, puis combinés aléatoirement dans des compositions. À chaque fois qu'on clique dans la fenêtre, l'image est enregistrée en haute résolution et un nouveau décor est généré.
 
 {{< video data/LeDecorateur.mp4>}}
 
@@ -30,9 +32,9 @@ Le décorateur, application Processing, 2020.
 ## Images imprimées et mise en espace
 
 ::: {layout-ncol=2}
-![Le décorateur, images imprimées...](data/LeDecorateur1.jpg)
+![TheDecorator, 2020, estampes numériques, 22cm x 28 cm chacune](data/LeDecorateur1.jpg)
 
-![Le décorateur, image imprimée, application Processing et textiles...](data/LeDecorateur2.jpg)
+![TheDecorator, 2020, estampe numérique, vidéo et textiles, 40 cm x 50 cm](data/LeDecorateur2.jpg)
 :::
 
 

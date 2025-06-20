@@ -12,7 +12,7 @@ format:
 ---
 :::{.navbar}
 [Annexe](index.html) |
-[Matériel d'appui 01: Outil génératif de drapés ](drapes.html) |
+[Matériel d'appui 01: TheDecorator ](drapes.html) |
 [Matériel d'appui 02: Générateurs d'effets de surface](motifs.html)
 :::
 

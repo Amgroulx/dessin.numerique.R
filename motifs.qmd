@@ -12,19 +12,24 @@ format:
 ---
 :::{.navbar}
 [Annexe](index.html) |
-[Matériel d'appui 01: Outil génératif de drapés ](drapes.html) |
+[Matériel d'appui 01: TheDecorator ](drapes.html) |
 [Matériel d'appui 02: Générateurs d'effets de surface](motifs.html)
 :::
 
 # Générateurs aléatoires d'effets de surface faits avec Processing
 
+Ces effets de surfaces générés aléatoirement témoignent de mon intérêt pour la création d'images qui émergent de figures simples et emblématiques du dessin numérique comme la ligne et l'ellipse.
+
+
 ## Moirés
 
-À chaque fois qu'on clique dans la figure, les couleurs et la largeur des lignes se regénèrent.
+Deux couches de lignes verticales sont superposées. L'angle et l'ondulation de chaque ensemble de lignes sont générés par la position relative de la souris dans la fenêtre, ce qui entraîne un effet de moiré. À chaque fois qu'on clique dans la fenêtre, les couleurs et la largeur des lignes se regénèrent aléatoirement.
 
 {{< video data/GenerateurMoires.mp4>}}
 
 
-## Motifs circulaires
+## Motifs elliptiques
+
+Plusieurs ellipses sont positionnés à des endroits fixes. La position relative de la souris dans la fenêtre détermine le rayon vertical et horizontal de chaque ellipse ainsi que la couleur du motif.
 
 {{< video data/Generateurmotifs.mp4>}}
