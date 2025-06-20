@@ -18,7 +18,7 @@ format:
 
 # Générateurs aléatoires d'effets de surface faits avec Processing
 
-Ces effets de surfaces générés aléatoirement témoignent de mon intérêt pour la création d'images qui émergent de figures simples et emblématiques du dessin numérique comme la ligne et l'ellipse.
+Ces recherches exploratoires d'effets de surfaces générés aléatoirement témoignent de mon intérêt pour la création d'images qui émergent de figures simples et emblématiques du dessin numérique comme la ligne et l'ellipse.
 
 
 ## Moirés
@@ -26,6 +26,7 @@ Ces effets de surfaces générés aléatoirement témoignent de mon intérêt po
 Deux couches de lignes verticales sont superposées. L'angle et l'ondulation de chaque ensemble de lignes sont générés par la position relative de la souris dans la fenêtre, ce qui entraîne un effet de moiré. À chaque fois qu'on clique dans la fenêtre, les couleurs et la largeur des lignes se regénèrent aléatoirement.
 
 {{< video data/GenerateurMoires.mp4>}}
+*Générateur aléatoire de moirés, 2020, application Processing.*
 
 
 ## Motifs elliptiques
@@ -33,3 +34,4 @@ Deux couches de lignes verticales sont superposées. L'angle et l'ondulation de 
 Plusieurs ellipses sont positionnés à des endroits fixes. La position relative de la souris dans la fenêtre détermine le rayon vertical et horizontal de chaque ellipse ainsi que la couleur du motif.
 
 {{< video data/Generateurmotifs.mp4>}}
+*Générateur aléatoire de motifs elliptiques, 2020, application Processing.*
