@@ -30,7 +30,7 @@ Un nombre fini d'éléments de décoration ont été créés, puis combinés al�
 *TheDecorator, 2020, application Processing.*
 
 
-## Images imprimées et mise en espace
+## Estampes numériques et mise en espace
 
 ::: {layout-ncol=2}
 ![TheDecorator, 2020, estampes numériques, 22 cm x 28 cm chacune.](data/LeDecorateur1.jpg)
