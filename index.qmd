@@ -59,12 +59,11 @@ Voici deux vidéos qui présentent des méthodes de génération algorithmique d
 
 Il s'agit de la méthode qui a été utilisée pour réaliser la pièce WWW qu'on trouve dans le matériel d'appui.
 
-
-
 {{< video data/bref_algo1.mp4>}}
 
 
 ### Tissage sergé basé sur un moiré
+
 {{< video data/bref_algo2.mp4>}}
 
 # Annexe 2 : R
