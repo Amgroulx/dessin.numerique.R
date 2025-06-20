@@ -1,0 +1,30 @@
+---
+title: ""
+format: 
+  html:
+    toc: true
+    toc-title: " "
+    toc-location: left
+    toc-depth: 2
+    theme: cosmo
+    page-layout: full
+    css: styles.css
+---
+:::{.navbar}
+[Annexe](index.html) |
+[Matériel d'appui 01: Outil génératif de drapés ](drapes.html) |
+[Matériel d'appui 02: Générateurs d'effets de surface](motifs.html)
+:::
+
+# Générateurs aléatoires d'effets de surface faits avec Processing
+
+## Moirés
+
+À chaque fois qu'on clique dans la figure, les couleurs et la largeur des lignes se regénèrent.
+
+{{< video data/GenerateurMoires.mp4>}}
+
+
+## Motifs circulaires
+
+{{< video data/Generateurmotifs.mp4>}}

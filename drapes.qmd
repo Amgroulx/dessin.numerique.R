@@ -1,0 +1,38 @@
+---
+title: ""
+format: 
+  html:
+    toc: true
+    toc-title: " "
+    toc-location: left
+    toc-depth: 2
+    theme: cosmo
+    page-layout: full
+    css: styles.css
+---
+
+:::{.navbar}
+[Annexe](index.html) |
+[Matériel d'appui 01: Outil génératif de drapés ](drapes.html) |
+[Matériel d'appui 02: Générateurs d'effets de surface](motifs.html)
+:::
+
+# Générateur de composition aléatoire
+
+Le décorateur, application Processing, 2020.
+
+
+## Application Processing
+
+{{< video data/LeDecorateur.mp4>}}
+
+
+## Images imprimées et mise en espace
+
+::: {layout-ncol=2}
+![Le décorateur, images imprimées...](data/LeDecorateur1.jpg)
+
+![Le décorateur, image imprimée, application Processing et textiles...](data/LeDecorateur2.jpg)
+:::
+
+
