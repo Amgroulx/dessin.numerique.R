@@ -12,14 +12,14 @@ format:
 ---
 
 :::{.navbar}
-[Annexe](index.html) |
-[Matériel d'appui 01: TheDecorator ](drapes.html) |
-[Matériel d'appui 02: Générateurs d'effets de surface](motifs.html)
+[Matériel d'appui 01: Annexe](index.html) |
+[Matériel d'appui 02: TheDecorator ](drapes.html) |
+[Matériel d'appui 03: Générateurs d'effets de surface](motifs.html)
 :::
 
 # TheDecorator
 
-TheDecorator est une application Processing qui permet de générer des drapés aléatoires servant de point de départ pour faire des sculptures textiles et des images numériques.
+TheDecorator est une application Processing qui permet de générer des drapés aléatoires servant de point de départ pour créer des sculptures textiles et des estampes numériques.
 
 
 ## Application Processing
@@ -35,7 +35,7 @@ Un nombre fini d'éléments de décoration ont été créés, puis combinés al�
 ::: {layout-ncol=2}
 ![TheDecorator, 2020, estampes numériques, 22 cm x 28 cm chacune.](data/LeDecorateur1.jpg)
 
-![TheDecorator, 2020, estampe numérique, vidéo et textiles, 40 cm x 50 cm.](data/LeDecorateur2.jpg)
+![TheDecorator, 2020, estampe numérique, vidéo et textiles, environ 50 cm x 60 cm.](data/LeDecorateur2.jpg)
 :::
 
 

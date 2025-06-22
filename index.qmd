@@ -11,9 +11,9 @@ format:
     css: styles.css
 ---
 :::{.navbar}
-[Annexe](index.html) |
-[Matériel d'appui 01: TheDecorator ](drapes.html) |
-[Matériel d'appui 02: Générateurs d'effets de surface](motifs.html)
+[Matériel d'appui 01: Annexe](index.html) |
+[Matériel d'appui 02: TheDecorator ](drapes.html) |
+[Matériel d'appui 03: Générateurs d'effets de surface](motifs.html)
 :::
 
 # Annexe 1 : Tissage
