@@ -23,7 +23,7 @@ Ces recherches exploratoires d'effets de surfaces générés aléatoirement tém
 
 ## Moirés
 
-Deux couches de lignes verticales sont superposées. L'angle et l'ondulation de chaque ensemble de lignes sont générés par la position relative de la souris dans la fenêtre, ce qui entraîne un effet de moiré. À chaque fois qu'on clique dans la fenêtre, les couleurs et la largeur des lignes se regénèrent aléatoirement.
+Deux couches de lignes verticales sont superposées. L'angle et l'ondulation de chaque ensemble de lignes sont déterminés par la position relative de la souris dans la fenêtre, ce qui entraîne un effet de moiré. À chaque fois qu'on clique dans la fenêtre, les couleurs et la largeur des lignes se regénèrent aléatoirement.
 
 {{< video data/GenerateurMoires.mp4>}}
 *Générateur aléatoire de moirés, 2020, application Processing.*

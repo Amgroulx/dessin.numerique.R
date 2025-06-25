@@ -19,8 +19,7 @@ format:
 
 # TheDecorator
 
-TheDecorator est une application Processing qui permet de générer des drapés aléatoires servant de point de départ pour créer des sculptures textiles et des estampes numériques.
-
+TheDecorator est une application Processing qui permet de générer des drapés aléatoires servant de point de départ pour créer des sculptures textiles et des estampes numériques. Ce projet est inspiré de l'ouvrage *Practical Decorative Upholstery* de Frank A. Moreland.
 
 ## Application Processing
 
@@ -38,4 +37,19 @@ Un nombre fini d'éléments de décoration ont été créés, puis combinés al�
 ![TheDecorator, 2020, estampe numérique, vidéo et textiles, environ 50 cm x 60 cm.](data/LeDecorateur2.jpg)
 :::
 
+## Practical Decorative Upholstery
 
+Le style des compositions générées s'inspire des intérieurs victoriens illustrés par l'auteur Frank A. Moreland dans son ouvrage *Practical Decorative Upholstery* de 1889. Les techniques présentées dans le livres ont aussi servi à faire plusieurs sculptures textiles.
+
+::: {layout-ncol=2}
+![Première de couverture de la réimpression de *Practical Decorative Upholstery*, 1979](data/covermoreland.jpg)
+
+![Quatrième de couverture de la réimpression de *Practical Decorative Upholstery*, 1979](data/backmoreland.jpg)
+:::
+
+::: {layout-ncol=2}
+![Illustration d'une draperie d'alcove, p.131](data/alcove.jpg)
+
+![Dessin technique de jabots, p.45](data/jabot.jpg)
+
+:::
