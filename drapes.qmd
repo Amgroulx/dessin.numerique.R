@@ -44,12 +44,5 @@ Le style des compositions générées s'inspire des intérieurs victoriens illus
 ::: {layout-ncol=2}
 ![Première de couverture de la réimpression de *Practical Decorative Upholstery*, 1979](data/covermoreland.JPG)
 
-![Quatrième de couverture de la réimpression de *Practical Decorative Upholstery*, 1979](data/backmoreland.JPG)
-:::
-
-::: {layout-ncol=2}
 ![Illustration d'une draperie d'alcove, p.131](data/alcove.JPG)
-
-![Dessin technique de jabots, p.45](data/jabot.JPG)
-
 :::
