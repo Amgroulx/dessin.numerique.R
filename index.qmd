@@ -30,7 +30,7 @@ Le Jacquard a été inventé pour faciliter la reproduction de designs complexes
 
 <br>
 
-![Mise en carte d'une image matricielle, archives personnelles](data/bref.png)
+![Mise en carte partielle d'une image matricielle, archives personnelles](data/bref.png)
 
 ## Annexe 1.2
 
@@ -72,7 +72,7 @@ Il s'agit de la méthode qui a été utilisée pour réaliser la pièce WWW qu'o
 
 Génération algorithmique d'un original pour le tissage Jacquard basé sur un moiré en armures doubles.
 
-![Échantillon d'armures moirées doubles, 2021, tissage Jacquard, coton et polyester](data/algo3.jpg)
+![Échantillon d'armures moirées doubles, 2021, tissage Jacquard, coton et polyester, 35 x 50 cm](data/algo3.jpg)
 
 # Annexe 2 : R
 
