@@ -37,9 +37,9 @@ Un nombre fini d'éléments de décoration ont été créés, puis combinés al�
 ![TheDecorator, 2020, estampe numérique, vidéo et textiles, environ 50 cm x 60 cm.](data/LeDecorateur2.jpg)
 :::
 
-## Practical Decorative Upholstery
+## *Practical Decorative Upholstery*
 
-Le style des compositions générées s'inspire des intérieurs victoriens illustrés par l'auteur Frank A. Moreland dans son ouvrage *Practical Decorative Upholstery* de 1889. Les techniques présentées dans le livres ont aussi servi à faire plusieurs sculptures textiles.
+Le style des compositions générées s'inspire des intérieurs victoriens illustrés par l'auteur Frank A. Moreland dans son ouvrage *Practical Decorative Upholstery* de 1889. Les techniques présentées dans le livres ont aussi servi à faire plusieurs sculptures textiles (voir matériel d'appui no. 11: *D'après Moreland: Drapés irréguliers soulevés*).
 
 ::: {layout-ncol=2}
 ![Première de couverture de la réimpression de *Practical Decorative Upholstery*, 1979](data/covermoreland.JPG)

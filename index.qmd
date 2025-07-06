@@ -56,19 +56,21 @@ Le tissage sur métier à cadre se distingue par un nombre limité de couleurs, 
 Voici deux vidéos qui présentent des méthodes de génération algorithmique de fichiers prêts à tisser que j'ai mises au point. Ces approches visent à exploiter le langage formel du pixel pour créer des tissages en utilisant seulement les fonctions automatiques et aléatoires de Photoshop sans avoir d'image de départ.
 
 
-### Tissage en armures doubles basé sur un dégradé en diffusion
+### Mise en carte pour un tissage en armures doubles
 
-Il s'agit de la méthode qui a été utilisée pour réaliser la pièce WWW qu'on trouve dans le matériel d'appui.
+Ce tissage à deux couches est basé sur la génération aléatoire d'un dégradé en diffusion. Il s'agit de la méthode qui a été utilisée pour réaliser la pièce WWW qu'on trouve dans le matériel d'appui (matériel d'appui no. 15, 16, 17).
 
 {{< video data/bref_algo1.mp4>}}
 
 
-### Tissage sergé basé sur un moiré
+### Mise en carte pour un tissage sergé
+
+Ce tissage est basé sur la superposition de 2 sergés classiques qui, une fois déformés, engendrent un effet moiré dans la structure même du tissage.
 
 {{< video data/bref_algo2.mp4>}}
 
 
-### Résultat d'un hybride entre les deux techniques
+### Tissage algorithmique
 
 Génération algorithmique d'un original pour le tissage Jacquard basé sur un moiré en armures doubles.
 
@@ -78,7 +80,7 @@ Génération algorithmique d'un original pour le tissage Jacquard basé sur un m
 
 ## Annexe 2.1
 
-R peut générer une multitude de figures vectorielles, comme ce diagramme en pointe de tarte qu'on obtient à l'aide d'une simple commande. Celle-ci peut ensuite être exportée en .svg et retravaillée dans Illustrator. Cela dit, j'aimerais pouvoir contourner les graphiques classiques pour créer des figures aléatoires. Pour ce faire, je dois investiguer les fonctions de base pour comprendre comment sont générés chacuns des éléments individuels (cercle, segments et leur positionnement, remplissage de couleur) et ensuite découvrir comment altérer ces formes.
+R peut générer une multitude de figures vectorielles, comme ce diagramme en pointe de tarte qu'on obtient à l'aide d'une simple commande. Celle-ci peut ensuite être exportée en .svg et retravaillée dans Illustrator. Cela dit, j'aimerais pouvoir contourner les graphiques classiques pour créer des figures aléatoires directement dans R. Pour ce faire, je dois investiguer les fonctions de base pour comprendre comment sont générés chacuns des éléments individuels (cercle, segments et leur positionnement, remplissage de couleur) et ensuite découvrir comment altérer ces formes.
 
 ::: {layout-ncol=2}
 

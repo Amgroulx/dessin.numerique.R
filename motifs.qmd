@@ -16,9 +16,9 @@ format:
 [Matériel d'appui 03: Générateurs d'effets de surface](motifs.html)
 :::
 
-# Générateurs aléatoires d'effets de surface faits avec Processing
+# Générateurs aléatoires d'effets de surface
 
-Ces recherches exploratoires d'effets de surfaces générés aléatoirement témoignent de mon intérêt pour la création d'images qui émergent de figures simples et emblématiques du dessin numérique comme la ligne et l'ellipse.
+Ces recherches exploratoires d'effets de surfaces générés aléatoirement avec Processing témoignent de mon intérêt pour la création d'images qui émergent de figures simples et emblématiques du dessin numérique comme la ligne et l'ellipse.
 
 
 ## Moirés
